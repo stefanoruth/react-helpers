@@ -1,0 +1,31 @@
+{
+	"name": "react-library",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "tsc"
+	},
+	"author": "",
+	"license": "MIT",
+	"peerDependencies": {
+		"react": ">=16.0.0"
+	},
+	"devDependencies": {
+		"@types/react": "^16.9.19",
+		"react": "^16.12.0",
+		"typescript": "^3.7.5"
+	},
+	"prettier": {
+		"semi": false,
+		"useTabs": true,
+		"singleQuote": true,
+		"trailingComma": "es5",
+		"proseWrap": "always",
+		"jsxBracketSameLine": true,
+		"bracketSpacing": true,
+		"arrowParens": "avoid",
+		"printWidth": 120
+	}
+}
