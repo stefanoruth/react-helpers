@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 
 export const SvgLoader: React.FunctionComponent<{
 	url: string

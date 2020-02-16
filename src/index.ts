@@ -1,1 +1,6 @@
 export * from './SvgLoader'
+export * from './Dom'
+export * from './ConfigProvider'
+export * from './useInterval'
+export * from './Portal'
+export * from './Css'
