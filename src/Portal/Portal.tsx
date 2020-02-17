@@ -1,16 +1,6 @@
 import * as React from 'react'
 import { createPortal } from 'react-dom'
-
-type PortalChildren = {
-	selector: string
-	content: any
-}
-
-const PortalContext = React.createContext<PortalChildren[]>([])
-
-export const PortalManager: React.FunctionComponent<{ portals: PortalChildren[] }> = props => (
-	<PortalContext.Provider value={props.portals}>{props.children}</PortalContext.Provider>
-)
+import { PortalContext, PortalChildren } from './Context'
 
 export const Portal: React.FunctionComponent<{ selector?: string }> = ({ children, selector }) => (
 	<PortalContext.Consumer>
