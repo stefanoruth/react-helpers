@@ -13,7 +13,7 @@
 		"postcss-cli": "^7.1.0",
 		"react": "^16.12.0",
 		"react-dom": "^16.12.0",
-		"react-library": "link:..",
+		"@main": "link:..",
 		"react-router-dom": "^5.1.2",
 		"react-scripts": "^3.3.1",
 		"tailwindcss": "^1.2.0",
@@ -21,7 +21,7 @@
 	},
 	"scripts": {
 		"build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
-		"start": "yarn build:style && react-scripts start",
+		"start": "yarn build:style && PORT=8080 react-scripts start",
 		"build": "react-scripts build"
 	},
 	"browserslist": {

@@ -1,3 +1,3 @@
-import { BuildConfig } from 'react-library'
+import { BuildConfig } from '@main'
 
 export const { useConfig, ConfigProvider } = BuildConfig({ env: '' })
