@@ -3,7 +3,7 @@ import { Grid } from '@main'
 
 export const GridPage: React.FunctionComponent = props => {
 	return (
-		<Grid className={'flex flex-wrap -mx-2'} itemClass={'p-4 flex-1 w-1/4'}>
+		<Grid className={'flex flex-wrap -mx-2'} itemClass={'px-2 pb-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 '}>
 			<div className={'bg-blue-400'}>1</div>
 			<div className={'bg-blue-400'}>2</div>
 			<div className={'bg-blue-400'}>3</div>
