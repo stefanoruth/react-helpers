@@ -1,22 +1,26 @@
 import React from 'react'
 import { ConfigProvider } from './utils'
 import { Switch, Route } from 'react-router'
-import { Home } from './pages/Home'
-import { About } from './pages/About'
+import { HomePage } from './pages/Home'
+import { AboutPage } from './pages/About'
 import { GridPage } from './pages/Grid'
+import { ModalPage } from './pages/Modal'
 
 export const App: React.FunctionComponent = () => {
 	return (
 		<ConfigProvider value={{ env: process.env.NODE_ENV as string }}>
 			<Switch>
 				<Route exact path="/">
-					<Home />
+					<HomePage />
 				</Route>
 				<Route exact path="/about">
-					<About></About>
+					<AboutPage />
 				</Route>
 				<Route exact path="/grid">
-					<GridPage></GridPage>
+					<GridPage />
+				</Route>
+				<Route exact path="/modal">
+					<ModalPage />
 				</Route>
 			</Switch>
 		</ConfigProvider>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Portal } from '@main'
 
-export const About: React.FunctionComponent = props => {
+export const AboutPage: React.FunctionComponent = props => {
 	const [open, setOpen] = React.useState(false)
 	console.log(open)
 	return (

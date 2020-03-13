@@ -21,7 +21,7 @@
 	},
 	"scripts": {
 		"build:style": "tailwind build src/styles/index.css -o src/styles/tailwind.css",
-		"start": "yarn build:style && PORT=8080 react-scripts start",
+		"start": "yarn build:style && PORT=8081 react-scripts start",
 		"build": "react-scripts build"
 	},
 	"browserslist": {
