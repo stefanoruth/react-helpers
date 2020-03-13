@@ -5,7 +5,5 @@ export type PortalChildren = {
 	content: any
 }
 
-const PortalContext = React.createContext<PortalChildren[]>([])
+export const PortalContext = React.createContext<PortalChildren[]>([])
 PortalContext.displayName = 'PortalContext'
-
-export { PortalContext }
