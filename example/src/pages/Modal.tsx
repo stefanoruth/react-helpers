@@ -1,12 +1,12 @@
 import React from 'react'
 import { Modal, RandomText } from '../components'
-import { Grid } from '@main/dist'
 
 export const ModalPage: React.FunctionComponent = () => {
 	return (
 		<div className="p-8 min-h-screen">
 			<TextModal></TextModal>
 			<ConfirmModal></ConfirmModal>
+			<FormModal></FormModal>
 		</div>
 	)
 }
@@ -53,6 +53,37 @@ const ConfirmModal: React.FunctionComponent = () => {
 								Blue
 							</button>
 						</div>
+					</div>
+				</Modal>
+			)}
+		</div>
+	)
+}
+
+const FormModal: React.FunctionComponent = () => {
+	const [open, setOpen] = React.useState(false)
+
+	return (
+		<div>
+			<button className="bg-gray-400 px-4 py-2 mb-2 hover:bg-gray-500" onClick={() => setOpen(true)}>
+				Form Modal
+			</button>
+
+			{open && (
+				<Modal size="md" onClose={() => setOpen(false)} closeButton>
+					<div className="p-8">
+						<form>
+							<h1>Login</h1>
+							<div>
+								<input type="email" placeholder="E-mail" />
+							</div>
+							<div>
+								<input type="password" placeholder="Password" />
+							</div>
+							<div>
+								<button type="submit">Login</button>
+							</div>
+						</form>
 					</div>
 				</Modal>
 			)}
