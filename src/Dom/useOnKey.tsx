@@ -1,6 +1,8 @@
 import * as React from 'react'
 
-export const useOnKey = (keys: number | string | (number | string)[], callback: () => void) => {
+type OnKey = (keys: number | string | (number | string)[], callback: () => void) => void
+
+export const useOnKey: OnKey = (keys, callback) => {
 	React.useEffect(() => {
 		const keyPool = keys instanceof Array ? keys : [keys]
 
