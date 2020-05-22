@@ -1,0 +1,26 @@
+name: Build & Release Party
+
+on:
+    push:
+        branches:
+            - master
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v1
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v1
+              with:
+                  node-version: 12.x
+                  registry-url: https://registry.npmjs.org/
+
+            - name: Install
+              run: yarn install
+
+            - name: Build
+              run: yarn build
