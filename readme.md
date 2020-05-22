@@ -2,55 +2,55 @@
 
 ## Features
 
-- Scroll lock
-- Focus trap
-- Click away listener
-- Keyboard listiner
-- Simple Portals
-- ClassName builder
-- Config Builder
-- Interval Hook
+-   Scroll lock
+-   Focus trap
+-   Click away listener
+-   Keyboard listiner
+-   Simple Portals
+-   ClassName builder
+-   Config Builder
+-   Interval Hook
 
 ## Installation
 
 ```shell
-yarn add react-easy-crop
+yarn add @stefanoruth/react-helpers
 ```
 
 or
 
 ```shell
-npm install react-easy-crop --save
+npm install @stefanoruth/react-helpers --save
 ```
 
 ## Basic usage
 
 ```js
-import { Portal, useScrollLockEffect, useTabFocus, useOnClickAway, useOnEscKey } from 'react-easy-crop'
+import { Portal, useScrollLockEffect, useTabFocus, useOnClickAway, useOnEscKey } from '@stefanoruth/react-helpers'
 
 export const Modal: React.FunctionComponent<{ onClose: () => void }> = props => {
-	const modalRef = React.useRef < HTMLDivElement > null
+    const modalRef = React.useRef < HTMLDivElement > null
 
-	useScrollLockEffect()
+    useScrollLockEffect()
 
-	useTabFocus(modalRef)
+    useTabFocus(modalRef)
 
-	useOnClickAway(modalRef, () => {
-		props.onClose()
-	})
+    useOnClickAway(modalRef, () => {
+        props.onClose()
+    })
 
-	useOnEscKey(() => {
-		props.onClose()
-	})
+    useOnEscKey(() => {
+        props.onClose()
+    })
 
-	return (
-		<Portal>
-			<div ref={modalRef}>
-				<button onClick={props.onClose}>Close</button>
-				{props.children}
-			</div>
-		</Portal>
-	)
+    return (
+        <Portal>
+            <div ref={modalRef}>
+                <button onClick={props.onClose}>Close</button>
+                {props.children}
+            </div>
+        </Portal>
+    )
 }
 ```
 
@@ -66,4 +66,4 @@ yarn dev
 
 ## License
 
-[MIT](https://github.com/ricardo-ch/react-easy-crop/blob/master/LICENSE)
+[MIT](https://github.com/stefanoruth/react-helpers/blob/master/LICENSE)
