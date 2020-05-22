@@ -1,7 +1,9 @@
 # React Helpers
 
+A small set of components to help bulding simpler code.
+
 ![version](https://badgen.net/npm/v/@stefanoruth/react-helpers)
-![license](https://badgen.net/npm/license/@stefanoruth/react-helpers)
+![license](https://badgen.net/github/license/@stefanoruth/react-helpers)
 ![size](https://badgen.net/bundlephobia/minzip/@stefanoruth/react-helpers)
 
 ## Features
