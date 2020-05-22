@@ -1,9 +1,8 @@
-name: Build & Release Party
+name: Build and Release Party
 
 on:
     push:
-        branches:
-            - master
+        branches: [master]
 
 jobs:
     build:
@@ -24,3 +23,6 @@ jobs:
 
             - name: Build
               run: yarn build
+
+            - name: Test
+              run: yarn test
