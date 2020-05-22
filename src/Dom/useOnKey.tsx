@@ -3,21 +3,21 @@ import * as React from 'react'
 type OnKey = (keys: number | string | (number | string)[], callback: (e: KeyboardEvent) => void) => void
 
 export const useOnKey: OnKey = (keys, callback) => {
-	React.useEffect(() => {
-		const keyPool = keys instanceof Array ? keys : [keys]
+    React.useEffect(() => {
+        const keyPool = keys instanceof Array ? keys : [keys]
 
-		const handler = (e: KeyboardEvent) => {
-			if (keyPool.indexOf(e.keyCode || e.which) !== -1 || keyPool.indexOf(e.code) !== -1) {
-				callback(e)
-			}
-		}
+        const handler = (e: KeyboardEvent) => {
+            if (keyPool.indexOf(e.keyCode || e.which) !== -1 || keyPool.indexOf(e.code) !== -1) {
+                callback(e)
+            }
+        }
 
-		document.addEventListener('keydown', handler)
+        document.addEventListener('keydown', handler)
 
-		return () => {
-			document.removeEventListener('keydown', handler)
-		}
-	}, [])
+        return () => {
+            document.removeEventListener('keydown', handler)
+        }
+    }, [])
 }
 
 export const useOnEscKey = (callback: () => void) => useOnKey('Escape', callback)

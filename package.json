@@ -1,40 +1,44 @@
 {
-	"name": "@stefanoruth/react-helpers",
-	"version": "1.0.0",
-	"main": "dist/index.js",
-	"author": "Stefano Ruth <stefano6262@gmail.com>",
-	"license": "MIT",
-	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"clean": "rm -rf dist/",
-		"build": "tsc",
-		"example": "cd ./example && yarn start",
-		"dev": "concurrently --kill-others \"tsc -w\" \"yarn example\""
-	},
-	"peerDependencies": {
-		"react": ">=16.0.0",
-		"react-dom": ">=16.0.0"
-	},
-	"dependencies": {
-		"focus-trap": "^5.1.0"
-	},
-	"devDependencies": {
-		"@types/react": "^16.9.19",
-		"@types/react-dom": "^16.9.5",
-		"concurrently": "^5.1.0",
-		"react": "^16.12.0",
-		"react-dom": "^16.12.0",
-		"typescript": "^3.7.5"
-	},
-	"prettier": {
-		"semi": false,
-		"useTabs": true,
-		"singleQuote": true,
-		"trailingComma": "es5",
-		"proseWrap": "always",
-		"jsxBracketSameLine": true,
-		"bracketSpacing": true,
-		"arrowParens": "avoid",
-		"printWidth": 120
-	}
+    "name": "@stefanoruth/react-helpers",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "author": "Stefano Ruth <stefano6262@gmail.com>",
+    "license": "MIT",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "clean": "rm -rf dist/",
+        "build": "tsc",
+        "example": "cd ./example && yarn start",
+        "dev": "concurrently --kill-others \"tsc -w\" \"yarn example\""
+    },
+    "files": [
+        "dist"
+    ],
+    "peerDependencies": {
+        "react": ">=16.0.0",
+        "react-dom": ">=16.0.0"
+    },
+    "dependencies": {
+        "focus-trap": "^5.1.0"
+    },
+    "devDependencies": {
+        "@types/react": "^16.9.19",
+        "@types/react-dom": "^16.9.5",
+        "concurrently": "^5.1.0",
+        "react": "^16.12.0",
+        "react-dom": "^16.12.0",
+        "typescript": "^3.7.5"
+    },
+    "prettier": {
+        "semi": false,
+        "useTabs": false,
+        "tabWidth": 4,
+        "singleQuote": true,
+        "trailingComma": "es5",
+        "proseWrap": "always",
+        "jsxBracketSameLine": true,
+        "bracketSpacing": true,
+        "arrowParens": "avoid",
+        "printWidth": 120
+    }
 }
