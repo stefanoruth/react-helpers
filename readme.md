@@ -1,12 +1,15 @@
-# React Components
+# React Helpers
 
 ## Features
 
-- Supports drag, zoom and rotate interactions
-- Provides crop dimensions as pixels and percentages
-- Supports any images format (JPEG, PNG, even GIF) as url or base 64 string
-- Supports any videos format supported in HTML5
-- Mobile friendly
+- Scroll lock
+- Focus trap
+- Click away listener
+- Keyboard listiner
+- Simple Portals
+- ClassName builder
+- Config Builder
+- Interval Hook
 
 ## Installation
 
