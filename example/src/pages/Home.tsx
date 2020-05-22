@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid } from '@main'
+import { Grid } from '@stefanoruth/react-helpers'
 import { Link } from 'react-router-dom'
 
 const linkClass = 'p-4 rounded-lg text-white bg-blue-400 hover:bg-blue-500 flex justify-center items-center'

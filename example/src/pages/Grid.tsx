@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Grid } from '@main'
+import { Grid } from '@stefanoruth/react-helpers'
 
 export const GridPage: React.FunctionComponent = props => {
 	return (

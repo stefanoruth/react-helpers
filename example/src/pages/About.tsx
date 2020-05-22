@@ -1,5 +1,5 @@
 import React from 'react'
-import { Portal } from '@main'
+import { Portal } from '@stefanoruth/react-helpers'
 
 export const AboutPage: React.FunctionComponent = props => {
 	const [open, setOpen] = React.useState(false)

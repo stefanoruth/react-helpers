@@ -1,11 +1,11 @@
 {
-	"name": "steru-react-library-example",
+	"name": "@stefanoruth/react-helpers-example",
 	"version": "0.1.0",
 	"license": "MIT",
 	"private": true,
 	"dependencies": {
 		"@fullhuman/postcss-purgecss": "^2.0.6",
-		"@main": "link:..",
+		"@stefanoruth/react-helpers": "link:..",
 		"@types/node": "^13.7.1",
 		"@types/react": "^16.9.19",
 		"@types/react-dom": "^16.9.5",

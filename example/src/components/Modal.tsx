@@ -1,5 +1,12 @@
 import * as React from 'react'
-import { Portal, classNames, useScrollLockEffect, useOnEscKey, useOnClickAway, useTabFocus } from '@main'
+import {
+	Portal,
+	classNames,
+	useScrollLockEffect,
+	useOnEscKey,
+	useOnClickAway,
+	useTabFocus,
+} from '@stefanoruth/react-helpers'
 import { CloseModalButton } from './CloseModalButton'
 
 export const Modal: React.FunctionComponent<{
