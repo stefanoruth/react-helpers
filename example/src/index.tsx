@@ -5,8 +5,8 @@ import { BrowserRouter } from 'react-router-dom'
 import './styles/tailwind.css'
 
 ReactDOM.render(
-	<BrowserRouter>
-		<App />
-	</BrowserRouter>,
-	document.getElementById('root')
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>,
+    document.getElementById('root')
 )

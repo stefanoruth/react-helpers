@@ -7,22 +7,22 @@ import { GridPage } from './pages/Grid'
 import { ModalPage } from './pages/Modal'
 
 export const App: React.FunctionComponent = () => {
-	return (
-		<ConfigProvider value={{ env: process.env.NODE_ENV as string }}>
-			<Switch>
-				<Route exact path="/">
-					<HomePage />
-				</Route>
-				<Route exact path="/about">
-					<AboutPage />
-				</Route>
-				<Route exact path="/grid">
-					<GridPage />
-				</Route>
-				<Route exact path="/modal">
-					<ModalPage />
-				</Route>
-			</Switch>
-		</ConfigProvider>
-	)
+    return (
+        <ConfigProvider value={{ env: process.env.NODE_ENV as string }}>
+            <Switch>
+                <Route exact path="/">
+                    <HomePage />
+                </Route>
+                <Route exact path="/about">
+                    <AboutPage />
+                </Route>
+                <Route exact path="/grid">
+                    <GridPage />
+                </Route>
+                <Route exact path="/modal">
+                    <ModalPage />
+                </Route>
+            </Switch>
+        </ConfigProvider>
+    )
 }
