@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Portal, css, useScrollLockEffect, useOnEscKey, useOnClickAway, useTabFocus } from '@main'
+import { Portal, classNames, useScrollLockEffect, useOnEscKey, useOnClickAway, useTabFocus } from '@main'
 import { CloseModalButton } from './CloseModalButton'
 
 export const Modal: React.FunctionComponent<{
@@ -32,7 +32,7 @@ export const Modal: React.FunctionComponent<{
 				<div className="bg-gray-400 opacity-75 absolute inset-0" />
 				<div
 					ref={modalRef}
-					className={css(
+					className={classNames(
 						'relative bg-white sm:rounded sm:shadow max-h-full w-full sm:h-auto sm:w-auto sm:max-h-1/5',
 						props.size === 'sm' && 'sm:w-full max-w-sm',
 						props.size === 'md' && 'sm:w-full max-w-md',

@@ -1,5 +1,6 @@
 import * as React from 'react'
 
+// https://overreacted.io/making-setinterval-declarative-with-react-hooks/
 export const useInterval = (callback: () => void, delay: number) => {
 	const savedCallback = React.useRef<undefined | (() => void)>()
 

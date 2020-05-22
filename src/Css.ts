@@ -1,4 +1,4 @@
-export const css = (...args: any[]) =>
+export const classNames = (...args: (string | number | boolean | undefined | void)[]) =>
 	args
 		.filter(value => {
 			if (typeof value === 'string') {
