@@ -1,8 +1,9 @@
 {
 	"name": "react-library",
 	"version": "1.0.0",
-	"description": "",
 	"main": "dist/index.js",
+	"author": "Stefano Ruth <stefano6262@gmail.com>",
+	"license": "MIT",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"clean": "rm -rf dist/",
@@ -10,8 +11,6 @@
 		"example": "cd ./example && yarn start",
 		"dev": "concurrently --kill-others \"tsc -w\" \"yarn example\""
 	},
-	"author": "",
-	"license": "MIT",
 	"peerDependencies": {
 		"react": ">=16.0.0",
 		"react-dom": ">=16.0.0"
