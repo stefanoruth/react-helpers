@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-type OnKey = (keys: number | string | (number | string)[], callback: () => void) => void
+type OnKey = (keys: number | string | (number | string)[], callback: (e: KeyboardEvent) => void) => void
 
 export const useOnKey: OnKey = (keys, callback) => {
 	React.useEffect(() => {
@@ -8,7 +8,7 @@ export const useOnKey: OnKey = (keys, callback) => {
 
 		const handler = (e: KeyboardEvent) => {
 			if (keyPool.indexOf(e.keyCode || e.which) !== -1 || keyPool.indexOf(e.code) !== -1) {
-				callback()
+				callback(e)
 			}
 		}
 

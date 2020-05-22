@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { isSameOrContains } from './helpers'
 
-export const useOnClickAway = (ref: React.RefObject<Element | null>, callback: () => void) => {
+export const useOnClickAway = (ref: React.RefObject<Element | null>, callback: (e: MouseEvent) => void) => {
 	React.useEffect(() => {
 		if (!ref.current) {
 			return
@@ -9,7 +9,7 @@ export const useOnClickAway = (ref: React.RefObject<Element | null>, callback: (
 
 		const handler = (e: MouseEvent) => {
 			if (ref.current && !isSameOrContains(ref.current, e.target as Element)) {
-				callback()
+				callback(e)
 			}
 		}
 
