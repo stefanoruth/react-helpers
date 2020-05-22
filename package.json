@@ -1,10 +1,10 @@
 {
     "name": "@stefanoruth/react-helpers",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "main": "dist/index.js",
     "author": "Stefano Ruth <stefano6262@gmail.com>",
     "license": "MIT",
-    "homepage": "https://github.com/stefanoruth/react-helpers#react-helpers",
+    "homepage": "https://github.com/stefanoruth/react-helpers#readme",
     "bugs": {
         "url": "https://github.com/stefanoruth/react-helpers/issues"
     },
