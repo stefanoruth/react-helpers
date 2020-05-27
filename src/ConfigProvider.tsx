@@ -5,6 +5,8 @@ export function BuildConfig<T>(
 ): { useConfig: () => T; ConfigProvider: React.FunctionComponent<{ value: T }> } {
     const ConfigContext = React.createContext<T>(initialConfig)
 
+    ConfigContext.displayName = 'ConfigContext'
+
     const useConfig = () => React.useContext(ConfigContext)
 
     const ConfigProvider: React.FunctionComponent<{ value: T }> = props => {
