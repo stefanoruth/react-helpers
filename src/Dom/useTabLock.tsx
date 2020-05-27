@@ -1,7 +1,7 @@
 import * as React from 'react'
 import focusTrap from 'focus-trap'
 
-export const useTabFocus = (ref: React.RefObject<HTMLElement>, getElement?: (el: HTMLElement) => HTMLElement) => {
+export const useTabLock = (ref: React.RefObject<HTMLElement>, getElement?: (el: HTMLElement) => HTMLElement) => {
     React.useEffect(() => {
         if (!ref.current) {
             return
