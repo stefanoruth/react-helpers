@@ -1,8 +1,7 @@
 {
     "name": "@stefanoruth/react-helpers",
     "version": "1.0.20",
-    "main": "dist/index.cjs.js",
-    "module": "dist/index.esm.js",
+    "main": "dist/index.js",
     "author": "Stefano Ruth <stefano6262@gmail.com>",
     "license": "MIT",
     "homepage": "https://github.com/stefanoruth/react-helpers#readme",
