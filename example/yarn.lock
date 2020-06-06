@@ -1350,8 +1350,9 @@
     fastq "^1.6.0"
 
 "@stefanoruth/react-helpers@link:..":
-  version "0.0.0"
-  uid ""
+  version "1.0.19"
+  dependencies:
+    focus-trap "^5.1.0"
 
 "@svgr/babel-plugin-add-jsx-attribute@^4.2.0":
   version "4.2.0"
