@@ -16,11 +16,5 @@ export default {
         },
     ],
     external: ['react', 'react-dom', 'focus-trap'],
-    plugins: [
-        commonjs(),
-        typescript({
-            useTsconfigDeclarationDir: true,
-        }),
-        bundleSize(),
-    ],
+    plugins: [commonjs(), typescript(), bundleSize()],
 }
