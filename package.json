@@ -3,7 +3,7 @@
     "version": "1.0.27",
     "main": "dist/index.cjs.js",
     "module": "dist/index.esm.js",
-    "types": "dist/types/index.d.ts",
+    "types": "dist/index.d.ts",
     "author": "Stefano Ruth <stefano6262@gmail.com>",
     "license": "MIT",
     "homepage": "https://github.com/stefanoruth/react-helpers#readme",
