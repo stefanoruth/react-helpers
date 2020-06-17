@@ -16,7 +16,7 @@ export const useScrollLockEffect = () => {
 
 export const useScrollLock = () => {
     const bodyRef = React.useRef<HTMLElement>()
-    const [scroll, setScroll] = React.useState<number | undefined>()
+    const scroll = React.useRef<number>()
 
     React.useEffect(() => {
         if (!bodyRef.current) {
@@ -24,13 +24,13 @@ export const useScrollLock = () => {
         }
     }, [])
 
-    const lock = React.useCallback(() => {
+    const lock = () => {
         if (!bodyRef.current) {
-            return
+            return false
         }
 
-        if (typeof scroll !== 'undefined') {
-            return
+        if (typeof scroll.current !== 'undefined') {
+            return false
         }
 
         const currentScroll = getScrollElement().scrollTop
@@ -41,16 +41,18 @@ export const useScrollLock = () => {
         bodyRef.current.style.width = '100%'
         bodyRef.current.style.top = `-${currentScroll}px`
 
-        setScroll(currentScroll)
-    }, [!!bodyRef.current, scroll])
+        scroll.current = currentScroll
 
-    const unlock = React.useCallback(() => {
+        return true
+    }
+
+    const unlock = () => {
         if (!bodyRef.current) {
-            return
+            return false
         }
 
-        if (typeof scroll === 'undefined') {
-            return
+        if (typeof scroll.current === 'undefined') {
+            return false
         }
 
         // Reset styles
@@ -59,10 +61,12 @@ export const useScrollLock = () => {
         bodyRef.current.style.width = ''
         bodyRef.current.style.top = ''
 
-        getScrollElement().scrollTop = scroll
+        getScrollElement().scrollTop = scroll.current
 
-        setScroll(undefined)
-    }, [!!bodyRef.current, scroll])
+        scroll.current = undefined
+
+        return true
+    }
 
     return {
         lock,
